@@ -16,3 +16,74 @@ img {
   display: block;
   max-width: 100%;
 }
+
+
+input {
+  display: block;
+  text-align: center;
+  color:rgb(36, 11, 94);
+  margin: auto;
+  font-size: 28px;
+  
+  border: 2px solid rgb(36, 11, 94);
+  
+  height: 40px;
+  width: 300px;
+}
+
+button {
+  display: block;
+  padding: 20px;
+  width: 180px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 4%;
+  background-color: rgb(231, 250, 243);
+  font-size: 24px;
+}
+
+.btn-prom {
+  margin-top: 0px;
+  margin-bottom:0;
+  height: 42px;
+  font-size: 20px;
+  padding: 4px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  
+  row-gap: 60px;
+
+}
+
+.btn-timer {
+  margin: 40px auto;
+}
+
+.field {
+  width: 180px;
+}
+ .value {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+  color:rgb(36, 11, 94);
+ }
+
+ .label {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  color:rgb(36, 11, 94);
+ }
+
+ .form {
+  display: flex;
+  align-items:flex-end;
+  row-gap: 40px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  
+ }
