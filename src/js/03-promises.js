@@ -3,9 +3,9 @@ import Notiflix from 'notiflix';
 
 const form = document.querySelector('.form');
 
-const firstDelayMs = document.querySelector('[name="delay"]');
-const delayStepMs = document.querySelector('[name="step"]');
-const amount = document.querySelector('[name="amount"]');
+// const firstDelayMs = document.querySelector('[name="delay"]');
+// const delayStepMs = document.querySelector('[name="step"]');
+// const amount = document.querySelector('[name="amount"]');
 
 
 form.addEventListener('submit', submitCreatePromises);
@@ -15,9 +15,19 @@ function submitCreatePromises(e) {
 
   e.preventDefault();
 
-  let delay = firstDelayMs.valueAsNumber;
-  const delayStepMsVal = delayStepMs.valueAsNumber;
-  const amountVal = amount.valueAsNumber;
+  // let delay = firstDelayMs.valueAsNumber;
+  // const delayStepMsVal = delayStepMs.valueAsNumber;
+  // const amountVal = amount.valueAsNumber;
+
+  
+  let delay = e.currentTarget.element;
+  const delayStepMsVal = e.currentTarget.element;
+  const amountVal = e.currentTarget.element;
+  
+  console.log(e.currentTarget.element);
+  console.log(e.currentTarget.element);
+  console.log(e.currentTarget.element);
+
 
   for (let i = 1; i <= amountVal; i++) {
     createPromise(i, delay)
