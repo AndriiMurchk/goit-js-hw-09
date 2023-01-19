@@ -10,14 +10,9 @@ function submitCreatePromises(e) {
 
   e.preventDefault();
   
-  let delay = e.currentTarget.elements.delay.value;
-  const delayStepMsVal = e.currentTarget.elements.step.value;
-  const amountVal = e.currentTarget.elements.amount.value;
-  
-  console.log(e.currentTarget.elements.delay.value);
-  console.log(e.currentTarget.elements.step.value);
-  console.log(e.currentTarget.elements.amount.value);
-
+  let delay = e.currentTarget.elements.delay.valueAsNumber;
+  const delayStepMsVal = e.currentTarget.elements.step.valueAsNumber;
+  const amountVal = e.currentTarget.elements.amount.valueAsNumber;
 
   for (let i = 1; i <= amountVal; i++) {
     createPromise(i, delay)
