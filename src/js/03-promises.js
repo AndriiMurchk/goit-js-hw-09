@@ -14,6 +14,7 @@ function submitCreatePromises(e) {
   const delayStepMsVal = e.currentTarget.elements.step.valueAsNumber;
   const amountVal = e.currentTarget.elements.amount.valueAsNumber;
 
+  
   for (let i = 1; i <= amountVal; i++) {
     createPromise(i, delay)
       .then(({ position, delay }) => {
